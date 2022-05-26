@@ -1,0 +1,21 @@
+第一部分（按ppt对应顺序）
+view.Test.java:从第一个界面开始的测试类
+Choose.java:对应ppt第2页，选择客户身份或管理者身份。
+Login.java:对应ppt第3页，管理者登录
+Flight_information.java:对应ppt第4页，显示所有的航班信息并能依靠航班号查找。
+Query_result.java:对应ppt第5页，点击表里出现的航班（目前无法从上一页跳转）出现该航班的乘客名单
+Custom_query.java:对应ppt第6页，客户查询预订的三种方式
+Custom_query_result.java:对应ppt第7页，根据查询结果得到预订信息，可以在表中选择要值机的航班。
+（所有的back按钮都可以返回上一级）
+
+第二部分————在选择要值机的航班后（按页面逻辑顺序）
+
+8. menuSelectSeat (选择座位)
+9. menuSelectMeal (选择餐品）
+10. menuAddCreditCard(如果选择了额外付费项目，否则跳转到11)
+11. menuShowInfo（显示已选择的值机信息等，可修改，修改则跳转到8）
+12. menuAddIdentification（添加身份证）
+13. menuPrint（展示所有信息，打印）
+
+
+testMenu用于从生成生成选择座位页面开始的进行测试 new menuSelectSeat（）
